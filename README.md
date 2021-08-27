@@ -42,7 +42,7 @@ sr_output <= q_a(seletor);
 ```
 
 Exercise3 - Describe the state machine in the following diagram (with counters,Fifo Synchronous and Generic thresholds).
-![Alt text](/img.jpg?raw=true "State machine diagram")
+![Alt text](/./img.jpg?raw=true "State machine diagram")
 
 ## Section 4 
 Exercise1 - Create VHDL testbench solution for Exemple1-section3 code. 
@@ -68,6 +68,8 @@ Exercise2 - Create VHDL solution proposal for 74595 device - (datasheet - https:
 ## Section 6 
 Design Kit documentation
 https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=163&No=502&PartNo=4
+
+Design Kit Hands-On
 https://youtu.be/RlrAdS8eaxc
 
 Exemple1 - Use the switches and LEDS to implement a circuit that turns the LED on/off with the change of state of each one of them.
@@ -91,11 +93,7 @@ FPGA Architecture study - https://www.intel.com/content/dam/www/programmable/us/
 Use previous Design Kit documentation
 
 Exercise1 - Create VHDL solution proposal for COUNTER project and add a PLL(Altera IP) on it design - Include one counter for each clock.
-The PLL must have 4 outputs:
-	* C0 - clock converter 50MHz to 125MHz.
-    * C1 - clock converter 50MHz to 100MHz.
-    * c2 - clock converter 50MHz to 25MHz.
-    * c3 - clock converter 50MHz to 10MHz.
+The PLL must have 4 outputs: C0(PLL_out) - clock converter 50MHz to 125MHz, C1(PLL_out) - clock converter 50MHz to 100MHz, c2(PLL_out) - clock converter 50MHz to 25MHz and c3(PLL_out) - clock converter 50MHz to 10MHz.
 	
 ## Section 9 
 Use previous Design Kit documentation
