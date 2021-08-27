@@ -1,4 +1,4 @@
-# Objective: Studying VHDL design flow with Qaurtus Prime 20.1
+# Studying VHDL design flow with Qaurtus Prime 20.1
 
 ## Section 1 
 Exercise1 - Create VHDL solution proposal (logical OR with 3 inputs) using the syntax when...else, process...case, and with...select
