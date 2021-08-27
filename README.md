@@ -1,6 +1,4 @@
-# FPGA_learning
-
-Objective: Studying VHDL design flow
+# Objective: Studying VHDL design flow with Qaurtus Prime 20.1
 
 ## Section 1 
 Exercise1 - Create VHDL solution proposal (logical OR with 3 inputs) using the syntax when...else, process...case, and with...select
@@ -13,8 +11,7 @@ Exercise3 - Create VHDL solution proposal (adder and subtractor 4-bit, NO SIGNAL
 NOTE: create a different files.
 
 ## Section 2 
-Exercise1 - Create new project for MODELSIM, a process to generate non-periodic signal for an 8-bit vector (passing the following values ​​every 10ns) : “ZZZZ_ZZZZ”
-"0000_0000" "1010_0100" "ZZZZ_ZZZZ"
+Exercise1 - Create new project for MODELSIM, a process to generate non-periodic signal for an 8-bit vector (passing the following values every 10ns) : “ZZZZ_ZZZZ”, "0000_0000", "1010_0100", "ZZZZ_ZZZZ"
 NOTE: Simulate with an appropriate time base (100 ns).
 
 Exercise2 - Create VHDL solution proposal for EXAMPLE 2 and its respective testbench.
@@ -24,7 +21,7 @@ Exercise3 - Use all VHDL solution proposals (Decoder3x8) and create its respecti
 ## Section 3 
 Exercise1 - Create VHDL solution proposal (Shift registers) FOR...LOOP and WHILE...LOOP.
 
-Exercise2 - Creat the Logical diagram resulting from the VHDL code below
+Exercise2 - Create the Logical diagram resulting from the VHDL code below
 ```VHDL
 process(clk, rst)
 begin
@@ -41,34 +38,41 @@ end process;
 sr_output <= q_a(seletor);
 ```
 
-Exercise3 - Describe the state machine in the following diagram (with counters,Fifo Synchronous and Generic thresholds).
-![Alt text](/img.jpg?raw=true "State machine diagram")
+Exercise3 - Create VHDL solution proposal RAM memory with an input and output address, an input port and an output port (all input signals must be STD_LOGIC_VECTOR), Create another RAM memory with only one input and output data port and a third RAM memory with only one input, output and address port.
+
+Exercise4 - Describe the state machine in the following diagram (with counters,Fifo Synchronous and Generic thresholds).
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/StateMachine.png?raw=true)
+
+Exercise5 - HDL Coding Practices to Accelerate Design Performance study  
+Https://www.xilinx.com/support/documentation/white_papers/wp231.pdf
+https://www.researchgate.net/publication/248744710_HDL_Coding_Practices_to_Accelerate_Design_Performance
 
 ## Section 4 
 Exercise1 - Create VHDL testbench solution for Exemple1-section3 code. 
-NOTE: use modelo_sr_tb.vhd Stimulus for it reference. 
+NOTE: use modelo_sr_tb.vhd Design Stimulus reference. 
 
 Exercise2 - Create VHDL testbench solution for Exemple2-section3 code. 
-NOTE: use modelo_sr_tb.vhd Stimulus for it reference. 
+NOTE: use modelo_sr_tb.vhd Design Stimulus reference. 
 
 Exercise3 - Create VHDL testbench solution for Exercise1-section3 code. 
-NOTE: use modelo_sr_tb.vhd Stimulus for it reference. 
+NOTE: use modelo_sr_tb.vhd Design Stimulus reference. 
 
 Exercise4 - Create VHDL testbench solution for Exemple3-section3 code. 
-NOTE: use modelo_sr_tb.vhd Stimulus for it reference.
+NOTE: use modelo_sr_tb.vhd Design Stimulus reference.
 
 Exercise5 - Create VHDL testbench solution for Exercise3-section3 code. 
-NOTE: use modelo_ram_tb.vhd Stimulus for it reference.   
+NOTE: use modelo_ram_tb.vhd Design Stimulus reference.   
 
 ## Section 5 
-Exercise1 - Create VHDL solution proposal for RAM memory with only one port for address and data.
+Exercise1 - Create Quartus Prime project for RAM memory with only one port for address and data.
+NOTE: use Exercise3-section3 files.
 
-Exercise2 - Create VHDL solution proposal for 74595 device - (datasheet - https://www.ti.com/lit/ds/scls041i/scls041i.pdf?ts=1630069816185).
+Exercise2 - Create VHDL solution proposal for 74595 device - https://www.ti.com/lit/ds/scls041i/scls041i.pdf?ts=1630069816185.
 
 ## Section 6 
-Design Kit documentation
-https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=163&No=502&PartNo=4
-https://youtu.be/RlrAdS8eaxc
+Design Kit documentation - https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=163&No=502&PartNo=4
+
+Design Kit Hands-On - https://youtu.be/RlrAdS8eaxc
 
 Exemple1 - Use the switches and LEDS to implement a circuit that turns the LED on/off with the change of state of each one of them.
 
@@ -91,19 +95,15 @@ FPGA Architecture study - https://www.intel.com/content/dam/www/programmable/us/
 Use previous Design Kit documentation
 
 Exercise1 - Create VHDL solution proposal for COUNTER project and add a PLL(Altera IP) on it design - Include one counter for each clock.
-The PLL must have 4 outputs:
-	* C0 - clock converter 50MHz to 125MHz.
-    * C1 - clock converter 50MHz to 100MHz.
-    * c2 - clock converter 50MHz to 25MHz.
-    * c3 - clock converter 50MHz to 10MHz.
+The PLL must have 4 outputs: C0(PLL_out) - clock converter 50MHz to 125MHz, C1(PLL_out) - clock converter 50MHz to 100MHz, c2(PLL_out) - clock converter 50MHz to 25MHz and c3(PLL_out) - clock converter 50MHz to 10MHz.
 	
 ## Section 9 
 Use previous Design Kit documentation
 
-Exemple1 - Use this EVK to to verify Shift register implementations (Exercise1-section3) 
+Exemple1 - Use this EVK to verify Shift register implementations (Exercise1-section3) 
 
-Exercise1 - Use this EVK to to verify State machine implementations (Exercise3-section3)
+Exercise1 - Use this EVK to verify State machine implementations (Exercise3-section3)
 
-Exercise2 - Use this EVK to to verify RAM memory implementations (Exercise1-section5) 
+Exercise2 - Use this EVK to verify RAM memory implementations (Exercise1-section5) 
 
-Exercise3 - Use this EVK to to verify RAM memory implementations (Exercise4-section4) 
+Exercise3 - Use this EVK to verify RAM memory implementations (Exercise4-section4) 
