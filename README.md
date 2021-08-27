@@ -44,19 +44,19 @@ Exercise3 - Describe the state machine in the following diagram (with counters,F
 
 ## Section 4 
 Exercise1 - Create VHDL testbench solution for Exemple1-section3 code. 
-NOTE: use modelo_sr_tb.vhd Stimulus for it reference. 
+NOTE: use modelo_sr_tb.vhd Design Stimulus reference. 
 
 Exercise2 - Create VHDL testbench solution for Exemple2-section3 code. 
-NOTE: use modelo_sr_tb.vhd Stimulus for it reference. 
+NOTE: use modelo_sr_tb.vhd Design Stimulus reference. 
 
 Exercise3 - Create VHDL testbench solution for Exercise1-section3 code. 
-NOTE: use modelo_sr_tb.vhd Stimulus for it reference. 
+NOTE: use modelo_sr_tb.vhd Design Stimulus reference. 
 
 Exercise4 - Create VHDL testbench solution for Exemple3-section3 code. 
-NOTE: use modelo_sr_tb.vhd Stimulus for it reference.
+NOTE: use modelo_sr_tb.vhd Design Stimulus reference.
 
 Exercise5 - Create VHDL testbench solution for Exercise3-section3 code. 
-NOTE: use modelo_ram_tb.vhd Stimulus for it reference.   
+NOTE: use modelo_ram_tb.vhd Design Stimulus reference.   
 
 ## Section 5 
 Exercise1 - Create VHDL solution proposal for RAM memory with only one port for address and data.
