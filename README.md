@@ -11,8 +11,7 @@ Exercise3 - Create VHDL solution proposal (adder and subtractor 4-bit, NO SIGNAL
 NOTE: create a different files.
 
 ## Section 2 
-Exercise1 - Create new project for MODELSIM, a process to generate non-periodic signal for an 8-bit vector (passing the following values ​​every 10ns) : “ZZZZ_ZZZZ”
-"0000_0000" "1010_0100" "ZZZZ_ZZZZ"
+Exercise1 - Create new project for MODELSIM, a process to generate non-periodic signal for an 8-bit vector (passing the following values every 10ns) : “ZZZZ_ZZZZ”, "0000_0000", "1010_0100", "ZZZZ_ZZZZ"
 NOTE: Simulate with an appropriate time base (100 ns).
 
 Exercise2 - Create VHDL solution proposal for EXAMPLE 2 and its respective testbench.
@@ -22,7 +21,7 @@ Exercise3 - Use all VHDL solution proposals (Decoder3x8) and create its respecti
 ## Section 3 
 Exercise1 - Create VHDL solution proposal (Shift registers) FOR...LOOP and WHILE...LOOP.
 
-Exercise2 - Creat the Logical diagram resulting from the VHDL code below
+Exercise2 - Create the Logical diagram resulting from the VHDL code below
 ```VHDL
 process(clk, rst)
 begin
@@ -39,8 +38,14 @@ end process;
 sr_output <= q_a(seletor);
 ```
 
-Exercise3 - Describe the state machine in the following diagram (with counters,Fifo Synchronous and Generic thresholds).
+Exercise3 - Create VHDL solution proposal RAM memory with an input and output address, an input port and an output port (all input signals must be STD_LOGIC_VECTOR), Create another RAM memory with only one input and output data port and a third RAM memory with only one input, output and address port.
+
+Exercise4 - Describe the state machine in the following diagram (with counters,Fifo Synchronous and Generic thresholds).
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/StateMachine.png?raw=true)
+
+Exercise5 - HDL Coding Practices to Accelerate Design Performance - Https://www.xilinx.com/support/documentation/white_papers/wp231.pdf
+
+https://www.researchgate.net/publication/248744710_HDL_Coding_Practices_to_Accelerate_Design_Performance
 
 ## Section 4 
 Exercise1 - Create VHDL testbench solution for Exemple1-section3 code. 
@@ -59,7 +64,8 @@ Exercise5 - Create VHDL testbench solution for Exercise3-section3 code.
 NOTE: use modelo_ram_tb.vhd Design Stimulus reference.   
 
 ## Section 5 
-Exercise1 - Create VHDL solution proposal for RAM memory with only one port for address and data.
+Exercise1 - Create Quartus Prime project for RAM memory with only one port for address and data.
+NOTE: use Exercise3-section3 files.
 
 Exercise2 - Create VHDL solution proposal for 74595 device - https://www.ti.com/lit/ds/scls041i/scls041i.pdf?ts=1630069816185.
 
