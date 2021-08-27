@@ -94,10 +94,10 @@ The PLL must have 4 outputs: C0(PLL_out) - clock converter 50MHz to 125MHz, C1(P
 ## Section 9 
 Use previous Design Kit documentation
 
-Exemple1 - Use this EVK to to verify Shift register implementations (Exercise1-section3) 
+Exemple1 - Use this EVK to verify Shift register implementations (Exercise1-section3) 
 
-Exercise1 - Use this EVK to to verify State machine implementations (Exercise3-section3)
+Exercise1 - Use this EVK to verify State machine implementations (Exercise3-section3)
 
-Exercise2 - Use this EVK to to verify RAM memory implementations (Exercise1-section5) 
+Exercise2 - Use this EVK to verify RAM memory implementations (Exercise1-section5) 
 
-Exercise3 - Use this EVK to to verify RAM memory implementations (Exercise4-section4) 
+Exercise3 - Use this EVK to verify RAM memory implementations (Exercise4-section4) 
