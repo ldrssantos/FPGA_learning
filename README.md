@@ -43,8 +43,8 @@ Exercise3 - Create VHDL solution proposal RAM memory with an input and output ad
 Exercise4 - Describe the state machine in the following diagram (with counters,Fifo Synchronous and Generic thresholds).
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/StateMachine.png?raw=true)
 
-Exercise5 - HDL Coding Practices to Accelerate Design Performance - Https://www.xilinx.com/support/documentation/white_papers/wp231.pdf
-
+Exercise5 - HDL Coding Practices to Accelerate Design Performance study  
+Https://www.xilinx.com/support/documentation/white_papers/wp231.pdf
 https://www.researchgate.net/publication/248744710_HDL_Coding_Practices_to_Accelerate_Design_Performance
 
 ## Section 4 
