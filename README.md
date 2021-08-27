@@ -40,7 +40,7 @@ sr_output <= q_a(seletor);
 ```
 
 Exercise3 - Describe the state machine in the following diagram (with counters,Fifo Synchronous and Generic thresholds).
-![Alt text](/./img.jpg?raw=true "State machine diagram")
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/StateMachine.png?raw=true)
 
 ## Section 4 
 Exercise1 - Create VHDL testbench solution for Exemple1-section3 code. 
@@ -61,14 +61,12 @@ NOTE: use modelo_ram_tb.vhd Stimulus for it reference.
 ## Section 5 
 Exercise1 - Create VHDL solution proposal for RAM memory with only one port for address and data.
 
-Exercise2 - Create VHDL solution proposal for 74595 device - (datasheet - https://www.ti.com/lit/ds/scls041i/scls041i.pdf?ts=1630069816185).
+Exercise2 - Create VHDL solution proposal for 74595 device - https://www.ti.com/lit/ds/scls041i/scls041i.pdf?ts=1630069816185.
 
 ## Section 6 
-Design Kit documentation
-https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=163&No=502&PartNo=4
+Design Kit documentation - https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=163&No=502&PartNo=4
 
-Design Kit Hands-On
-https://youtu.be/RlrAdS8eaxc
+Design Kit Hands-On - https://youtu.be/RlrAdS8eaxc
 
 Exemple1 - Use the switches and LEDS to implement a circuit that turns the LED on/off with the change of state of each one of them.
 
