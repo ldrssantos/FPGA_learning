@@ -16,7 +16,7 @@
 --
 -- Revision: 
 -- Revision 0.01 - File Created
--- Additional Commoets: 
+-- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
 library IEEE;

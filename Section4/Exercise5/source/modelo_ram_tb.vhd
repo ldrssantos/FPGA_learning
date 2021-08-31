@@ -25,11 +25,9 @@ library IEEE;
 	use IEEE.std_logic_1164.all;
 	use IEEE.numeric_std.all;
 
---declaramos a entidade
 entity modelo_ram_tb is
 end modelo_ram_tb;
 
---a arquitetura
 architecture behavioral of modelo_ram_tb is
 
 	component Exercise5 is

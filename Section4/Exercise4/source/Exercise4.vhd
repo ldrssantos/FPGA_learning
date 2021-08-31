@@ -53,9 +53,6 @@ architecture behavioral of Exercise4 is
 	end component;
 begin
 	Full_SR: Example3
-		generic map(
-			data_range  => data_range
-		)
 		port map (
 			rst					=> rst,
 			clock				=> clock,
