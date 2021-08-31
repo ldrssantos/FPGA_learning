@@ -75,18 +75,28 @@ Design Kit documentation - https://www.terasic.com.tw/cgi-bin/page/archive.pl?La
 Design Kit Hands-On - https://youtu.be/RlrAdS8eaxc
 
 Exemple1 - Use the switches and LEDS to implement a circuit that turns the LED on/off with the change of state of each one of them.
+Quartus Pin Plnner results according to Design kit documentation presented above
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exemple1/source/PinPlanner-results.jpg?raw=true)
 
 Exercise1 - Change the previous resolution to a new LED vector(5 positions), check each pin mapping on Altera pinplanner and Map this new element. NOTE: verify technical documentation and user guide.
+Quartus Pin Plnner results according to Design kit documentation presented above
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exercise1/source/PinPlanner-results.jpg?raw=true)
 
 Exemple2 - Create VHDL solution proposal for simple counter
+Quartus Pin Plnner results according to Design kit documentation presented above
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exemple2/source/PinMap%20-%20results.jpg?raw=true)
 
 Exercise2 - Use the switches to verify Decoder3x8 VHDL implementation (Exercise3-section3)
+Quartus Pin Plnner results according to Design kit documentation presented above
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exercise2/source/PinMap-results.jpg?raw=true)
 
 Exercise3 - Justify why the counter uses 29-bits
 
 Exercise4 - Create VHDL solution proposal (4-bit counter), Selector switch for UP and DOWN, Push button to increase/decrease according to configuration
 LOAD button, loads the counter with key value and turn on the counter on LEDs.
 Note: use counterupdown.zip design reference 
+Quartus Pin Plnner results according to Design kit documentation presented above
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exercise4/source/PinMap-results.jpg?raw=true)
 
 ## Section 7 
 FPGA Architecture study - https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/wp/wp-01003.pdf
