@@ -79,6 +79,7 @@ Quartus Pin Plnner results according to Design kit documentation presented above
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exemple1/source/PinPlanner-results.jpg?raw=true)
 
 Exercise1 - Change the previous resolution to a new LED vector(5 positions), check each pin mapping on Altera pinplanner and Map this new element. NOTE: verify technical documentation and user guide.
+
 Quartus Pin Plnner results according to Design kit documentation presented above
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exercise1/source/PinPlanner-results.jpg?raw=true)
 
@@ -87,6 +88,7 @@ Quartus Pin Plnner results according to Design kit documentation presented above
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exemple2/source/PinMap%20-%20results.jpg?raw=true)
 
 Exercise2 - Use the switches to verify Decoder3x8 VHDL implementation (Exercise3-section3)
+
 Quartus Pin Plnner results according to Design kit documentation presented above
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exercise2/source/PinMap-results.jpg?raw=true)
 
@@ -95,6 +97,7 @@ Exercise3 - Justify why the counter uses 29-bits
 Exercise4 - Create VHDL solution proposal (4-bit counter), Selector switch for UP and DOWN, Push button to increase/decrease according to configuration
 LOAD button, loads the counter with key value and turn on the counter on LEDs.
 Note: use counterupdown.zip design reference 
+
 Quartus Pin Plnner results according to Design kit documentation presented above
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exercise4/source/PinMap-results.jpg?raw=true)
 
@@ -106,6 +109,9 @@ Use previous Design Kit documentation
 
 Exercise1 - Create VHDL solution proposal for COUNTER project and add a PLL(Altera IP) on it design - Include one counter for each clock.
 The PLL must have 4 outputs: C0(PLL_out) - clock converter 50MHz to 125MHz, C1(PLL_out) - clock converter 50MHz to 100MHz, c2(PLL_out) - clock converter 50MHz to 25MHz and c3(PLL_out) - clock converter 50MHz to 10MHz.
+
+Quartus Pin Plnner results according to Design kit documentation presented above
+
 	
 ## Section 9 
 Use previous Design Kit documentation
