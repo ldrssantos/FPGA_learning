@@ -111,6 +111,7 @@ Exercise1 - Create VHDL solution proposal for COUNTER project and add a PLL(Alte
 The PLL must have 4 outputs: C0(PLL_out) - clock converter 50MHz to 125MHz, C1(PLL_out) - clock converter 50MHz to 100MHz, c2(PLL_out) - clock converter 50MHz to 25MHz and c3(PLL_out) - clock converter 50MHz to 10MHz.
 
 Quartus Pin Plnner results according to Design kit documentation presented above
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section8/Exercise1/source/PinMap-results.jpg?raw=true)
 
 	
 ## Section 9 
