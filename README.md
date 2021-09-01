@@ -41,7 +41,7 @@ sr_output <= q_a(seletor);
 Exercise3 - Create VHDL solution proposal RAM memory with an input and output address, an input port and an output port (all input signals must be STD_LOGIC_VECTOR), Create another RAM memory with only one input and output data port and a third RAM memory with only one input, output and address port.
 
 Exercise4 - Describe the state machine in the following diagram (with counters,Fifo Synchronous and Generic thresholds).
-![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/StateMachine.png?raw=true)
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section3/Exercise4/source/StateMachine.png?raw=true)
 
 Exercise5 - HDL Coding Practices to Accelerate Design Performance study  
 Https://www.xilinx.com/support/documentation/white_papers/wp231.pdf
