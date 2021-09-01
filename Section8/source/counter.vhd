@@ -24,9 +24,9 @@ USE IEEE.numeric_std.all;
 -- Counter
 entity counter is
     port (
-        CLK_in      : in std_logic;
-		rst			: in std_logic;
-		stop		: in std_logic;
+        CLK_in	: in  std_logic;
+		rst			: in  std_logic;
+		stop		: in  std_logic;
         led         : out std_logic_vector(3 downto 0)
     );
 end counter;
@@ -37,14 +37,12 @@ architecture rtl of counter is
 	
 begin
     -- Counter process
-    COUNT_SHIFT: process (clk_in)
+    COUNT_SHIFT: process (CLK_in)
     begin
 		if rst = '1' then
 			iCounter <= (others => '0');
 		elsif CLK_in'event and CLK_in = '1' then
             if stop = '0' then 
-				iCounter <= iCounter - 1;
-			else                           
 				iCounter <= iCounter + 1;
             end if;
         end if;
