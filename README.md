@@ -48,16 +48,16 @@ Https://www.xilinx.com/support/documentation/white_papers/wp231.pdf
 https://www.researchgate.net/publication/248744710_HDL_Coding_Practices_to_Accelerate_Design_Performance
 
 ## Section 4 
-###### Exercise1 - Create VHDL testbench solution for Exemple1-section3 code. 
+###### Exercise1 - Create VHDL testbench solution for Example1-section3 code. 
 NOTE: use modelo_sr_tb.vhd Design Stimulus reference. 
 
-###### Exercise2 - Create VHDL testbench solution for Exemple2-section3 code. 
+###### Exercise2 - Create VHDL testbench solution for Example2-section3 code. 
 NOTE: use modelo_sr_tb.vhd Design Stimulus reference. 
 
 ###### Exercise3 - Create VHDL testbench solution for Exercise1-section3 code. 
 NOTE: use modelo_sr_tb.vhd Design Stimulus reference. 
 
-###### Exercise4 - Create VHDL testbench solution for Exemple3-section3 code. 
+###### Exercise4 - Create VHDL testbench solution for Example3-section3 code. 
 NOTE: use modelo_sr_tb.vhd Design Stimulus reference.
 
 ###### Exercise5 - Create VHDL testbench solution for Exercise3-section3 code. 
@@ -74,17 +74,17 @@ Design Kit documentation - https://www.terasic.com.tw/cgi-bin/page/archive.pl?La
 
 Design Kit Hands-On - https://youtu.be/RlrAdS8eaxc
 
-###### Exemple1 - Use the switches and LEDS to implement a circuit that turns the LED on/off with the change of state of each one of them.
+###### Example1 - Use the switches and LEDS to implement a circuit that turns the LED on/off with the change of state of each one of them.
 Quartus Pin Plnner results according to Design kit documentation presented above
-![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exemple1/source/PinPlanner-results.jpg?raw=true)
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Example1/source/PinPlanner-results.jpg?raw=true)
+
+###### Example2 - Create VHDL solution proposal for simple counter
+Quartus Pin Plnner results according to Design kit documentation presented above
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Example2/source/PinMap%20-%20results.jpg?raw=true)
 
 ###### Exercise1 - Change the previous resolution to a new LED vector(5 positions), check each pin mapping on Altera pinplanner and Map this new element. NOTE: verify technical documentation and user guide.
 Quartus Pin Plnner results according to Design kit documentation presented above
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exercise1/source/PinPlanner-results.jpg?raw=true)
-
-###### Exemple2 - Create VHDL solution proposal for simple counter
-Quartus Pin Plnner results according to Design kit documentation presented above
-![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section6/Exemple2/source/PinMap%20-%20results.jpg?raw=true)
 
 ###### Exercise2 - Use the switches to verify Decoder3x8 VHDL implementation (Exercise3-section3)
 Quartus Pin Plnner results according to Design kit documentation presented above
