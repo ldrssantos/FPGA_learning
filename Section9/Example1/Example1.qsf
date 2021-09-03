@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY Exercise1
+set_global_assignment -name TOP_LEVEL_ENTITY Example1
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:36:54  AUGUST 20, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -57,11 +57,8 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Exercise1_tb -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT source/Exercise1_run_msim_rtl_vhdl.do -section_id eda_simulation
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Example1_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT source/Example1_run_msim_rtl_vhdl.do -section_id eda_simulation
 set_location_assignment PIN_N21 -to rst
 set_location_assignment PIN_E21 -to sr_for_out
 set_location_assignment PIN_E22 -to sr_while_out
@@ -82,16 +79,19 @@ set_location_assignment PIN_H17 -to sr_while_vec_out[4]
 set_location_assignment PIN_F15 -to sr_while_vec_out[5]
 set_location_assignment PIN_G15 -to sr_while_vec_out[6]
 set_location_assignment PIN_G16 -to sr_while_vec_out[7]
-set_global_assignment -name EDA_TEST_BENCH_NAME Exercise1_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Exercise1_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Exercise1_tb -section_id Exercise1_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE source/Exercise1_tb.vhd -section_id Exercise1_tb
 set_location_assignment PIN_Y2 -to clk_50M
 set_location_assignment PIN_M21 -to en_sr
 set_location_assignment PIN_M23 -to sr_in_ctrl
-set_global_assignment -name SDC_FILE source/exercise1_timing.sdc
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE source/ShiftRegister_while_loop.vhd -hdl_version VHDL_2008
 set_global_assignment -name VHDL_FILE source/ShiftRegister_for_loop.vhd -hdl_version VHDL_2008
-set_global_assignment -name VHDL_FILE source/Exercise1.vhd -hdl_version VHDL_2008
-set_global_assignment -name VHDL_TEST_BENCH_FILE source/Exercise1_tb.vhd
+set_global_assignment -name SDC_FILE source/Example1_timing.sdc
+set_global_assignment -name VHDL_FILE source/Example1.vhd -hdl_version VHDL_2008
+set_global_assignment -name VHDL_TEST_BENCH_FILE source/Example1_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME Example1_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Example1_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Example1_tb -section_id Example1_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE source/Example1_tb.vhd -section_id Example1_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

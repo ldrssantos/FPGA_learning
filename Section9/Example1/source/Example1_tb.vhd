@@ -5,7 +5,7 @@
 -- Create Date:   11:13:38 07/31/2021
 -- Design Name:   
 -- Module Name:   
--- Project Name:  Design testbench for Exercise1 VHDL codes (Section3)
+-- Project Name:  Design testbench for Example1 VHDL codes (Section3)
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
@@ -25,13 +25,13 @@ library IEEE;
 	use IEEE.std_logic_1164.all;
 	use IEEE.numeric_std.all;
 
-entity Exercise1_tb is
+entity Example1_tb is
 	generic (
 		sr_depth : integer := 7
 	);
-end Exercise1_tb;
+end Example1_tb;
 
-architecture Testbench of Exercise1_tb is
+architecture Testbench of Example1_tb is
 
 	signal clk_50M 			: std_logic := '0';
 	signal sr_in_ctrl		: std_logic := '0';
@@ -48,7 +48,7 @@ architecture Testbench of Exercise1_tb is
 	signal sr_while_vec_out : std_logic_vector(sr_depth downto 0);
 
 
-	component Exercise1 is
+	component Example1 is
 	generic (
 		sr_depth : integer := 7
 	);	
@@ -91,7 +91,7 @@ begin
 	estimulo_vector <= estimulo_vector(14 downto 0) & estimulo_vector(15) when rising_edge(sr_in_ctrl);
 	estimulo        <= estimulo_vector(15);
 
-	DUT : Exercise1
+	DUT : Example1
 	generic map (
 		sr_depth     => sr_depth
 	)

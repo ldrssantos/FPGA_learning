@@ -24,7 +24,7 @@ library IEEE;
 	use IEEE.std_logic_1164.all;
 	use IEEE.numeric_std.all;
 
-entity Exercise1 is
+entity Example1 is
   generic (
     sr_depth : integer := 7
   );
@@ -39,9 +39,9 @@ entity Exercise1 is
 	sr_while_out 	 : out std_logic;
     sr_while_vec_out : out std_logic_vector(sr_depth downto 0)
   );
-end Exercise1;
+end Example1;
 
-architecture behavioral of Exercise1 is	   
+architecture behavioral of Example1 is	   
 -- Component Declarations for the Design Under Test (DUT)
  	COMPONENT ShiftRegister_for_loop
 	generic (
