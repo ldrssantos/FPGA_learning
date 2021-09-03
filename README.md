@@ -117,7 +117,7 @@ Use previous Design Kit documentation
 
 ###### Example1 - Use this EVK to verify Shift register implementations (Exercise1-section3) 
 Quartus Pin Plnner results according to Design kit documentation presented above
-![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Exercise1/source/PinMap-results.jpg?raw=true)
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Example1/source/PinMap-results.jpg?raw=true)
 
 ###### Exercise1 - Use this EVK to verify State machine implementations (Exercise3-section3)
 
