@@ -124,5 +124,6 @@ Quartus Pin Plnner results according to Design kit documentation presented above
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Exercise1/source/PinMap-results.jpg?raw=true)
 
 Exercise2 - Use this EVK to verify RAM memory implementations (Exercise1-section5) 
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Exercise2/source/PinMap-results.jpg?raw=true)
 
 Exercise3 - Use this EVK to verify RAM memory implementations (Exercise4-section4) 
