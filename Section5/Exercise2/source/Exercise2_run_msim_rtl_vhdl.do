@@ -13,6 +13,7 @@ add wave -noupdate /exercise2_tb/qf_o
 add wave -noupdate /exercise2_tb/qg_o
 add wave -noupdate /exercise2_tb/qh_o
 add wave -noupdate /exercise2_tb/qh1_o
+add wave -noupdate /exercise2_tb/DUT/q_data
 view structure
 view signals
 run 1ms
