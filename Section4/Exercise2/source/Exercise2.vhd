@@ -10,7 +10,7 @@
 -- Tool versions:  
 -- Description:   
 -- 
--- Dependencies: 
+-- Dependencies: Example2.vhd
 --				 
 --			     
 -- 
@@ -38,20 +38,31 @@ entity Exercise2 is
 end Exercise2;
 
 architecture behavioral of Exercise2 is	
-	signal q_a : std_logic_vector(7 downto 0);
+	component Example2 is
+	generic(
+		data_out_selector : integer := 7
+	);
+	port(
+		rst			:	in	std_logic;
+		clock		:	in	std_logic;
+		d			:	in	std_logic;
+		en          :	in	std_logic;
+		sr_output   :	out	std_logic
+	);
+	end component;
+	
 begin
-	process(clock, rst)
-		begin
-			if rst = '1' then
-				q_a <= (others=>'0'); 
-			elsif clock'event and clock = '1' then
-				if en = '1' then
-					q_a(0) <= d;
-					q_a(7 downto 1) <= q_a(6 downto 0);
-				end if;
-			end if;
-	end process;
 
-	sr_output <= q_a(data_out_selector);
+	SR : Example2 
+	generic map(
+		data_out_selector => data_out_selector
+	)
+	port map(
+		rst			=> rst,
+		clock		=> clock,
+		en 			=> en,
+		d			=> d,
+		sr_output   => sr_output
+	);
 
 end behavioral;

@@ -24,7 +24,7 @@ library IEEE;
 	use IEEE.std_logic_1164.all;
 	use IEEE.numeric_std.all;
 
-entity Exercise2 is
+entity Example2 is
 	generic(
 		data_out_selector : integer := 7
 	);
@@ -32,11 +32,12 @@ entity Exercise2 is
 		rst			:	in	std_logic;
 		clock		:	in	std_logic;
 		d			:	in	std_logic;
+		en 			:	in	std_logic;
 		sr_output   :	out	std_logic
 	);
-end Exercise2;
+end Example2;
 
-architecture behavioral of Exercise2 is	
+architecture behavioral of Example2 is	
 	signal q_a : std_logic_vector(7 downto 0);
 begin
 	process(clock, rst)

@@ -24,16 +24,16 @@ library IEEE;
 	use IEEE.std_logic_1164.all;
 	use IEEE.numeric_std.all;
 
-entity Exemple1 is
+entity Example1 is
 	port(
 		rst		:	in	std_logic;
 		clock	:	in	std_logic;
 		d		:	in	std_logic;
 		q		:	out std_logic_vector(4 downto 1)		
 	);
-end Exemple1;
+end Example1;
 
-architecture behavioral of Exemple1 is	
+architecture behavioral of Example1 is	
 begin
 	process(clock, rst)
 	begin
