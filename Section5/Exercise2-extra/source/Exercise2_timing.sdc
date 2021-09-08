@@ -20,7 +20,7 @@
 ## PROGRAM "Quartus Prime"
 ## VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-## DATE    "Tue Sep 07 20:08:07 2021"
+## DATE    "Wed Sep 08 09:02:47 2021"
 
 ##
 ## DEVICE  "EP4CE115F29C7"
@@ -39,8 +39,13 @@ set_time_format -unit ns -decimal_places 3
 # Create Clock
 #**************************************************************
 
-create_clock -name {rclk} -period 10.000 -waveform { 0.000 5.000 } [get_ports {qh_o qa_o qb_o qc_o qd_o qe_o qf_o qg_o}]
-create_clock -name {srclk} -period 40.000 -waveform { 0.000 20.000 } [get_ports {qh1_o}]
+create_clock -name {clk_50M} -period 50.000 -waveform { 0.000 10.00 } [get_ports {clk_50M}]
+
+# create_clock -name {rclk} -period 10.000 -waveform { 0.000 5.000 } [get_ports {rclk}]
+# create_clock -name {srclk} -period 40.000 -waveform { 0.000 20.000 } [get_ports {srclk}]
+
+# create_clock -name {rclk} -period 10.000 -waveform { 0.000 5.000 } [get_ports {rclk qh_o qa_o qb_o qc_o qd_o qe_o qf_o qg_o}]
+# create_clock -name {srclk} -period 40.000 -waveform { 0.000 20.000 } [get_ports {srclk qh1_o}]
 
 
 #**************************************************************
@@ -59,30 +64,36 @@ create_clock -name {srclk} -period 40.000 -waveform { 0.000 20.000 } [get_ports 
 # Set Clock Uncertainty
 #**************************************************************
 
+set_clock_uncertainty -rise_from [get_clocks {clk_50M}] -rise_to [get_clocks {clk_50M}]  0.020  
+set_clock_uncertainty -rise_from [get_clocks {clk_50M}] -fall_to [get_clocks {clk_50M}]  0.020  
+set_clock_uncertainty -fall_from [get_clocks {clk_50M}] -rise_to [get_clocks {clk_50M}]  0.020  
+set_clock_uncertainty -fall_from [get_clocks {clk_50M}] -fall_to [get_clocks {clk_50M}]  0.020  
 
 
 #**************************************************************
 # Set Input Delay
 #**************************************************************
 
-set_input_delay -add_delay  -clock [get_clocks {srclk}]  25.000 [get_ports {oe_n_i}]
-set_input_delay -add_delay  -clock [get_clocks {srclk}]  25.000 [get_ports {ser}]
-set_input_delay -add_delay  -clock [get_clocks {srclk}]  25.000 [get_ports {srclr_n_i}]
+set_input_delay -add_delay  -clock [get_clocks {clk_50M}]  25.000 [get_ports {srclk}]
+set_input_delay -add_delay  -clock [get_clocks {clk_50M}]  25.000 [get_ports {rclk}]
+set_input_delay -add_delay  -clock [get_clocks {clk_50M}]  25.000 [get_ports {oe_n_i}]
+set_input_delay -add_delay  -clock [get_clocks {clk_50M}]  25.000 [get_ports {ser}]
+set_input_delay -add_delay  -clock [get_clocks {clk_50M}]  25.000 [get_ports {srclr_n_i}]
 
 
 #**************************************************************
 # Set Output Delay
 #**************************************************************
 
-set_output_delay -add_delay  -clock [get_clocks {rclk}]  37.000 [get_ports {qa_o}]
-set_output_delay -add_delay  -clock [get_clocks {rclk}]  37.000 [get_ports {qb_o}]
-set_output_delay -add_delay  -clock [get_clocks {rclk}]  37.000 [get_ports {qc_o}]
-set_output_delay -add_delay  -clock [get_clocks {rclk}]  37.000 [get_ports {qd_o}]
-set_output_delay -add_delay  -clock [get_clocks {rclk}]  37.000 [get_ports {qe_o}]
-set_output_delay -add_delay  -clock [get_clocks {rclk}]  37.000 [get_ports {qf_o}]
-set_output_delay -add_delay  -clock [get_clocks {rclk}]  37.000 [get_ports {qg_o}]
-set_output_delay -add_delay  -clock [get_clocks {rclk}]  37.000 [get_ports {qh1_o}]
-set_output_delay -add_delay  -clock [get_clocks {rclk}]  37.000 [get_ports {qh_o}]
+set_output_delay -add_delay  -clock [get_clocks {clk_50M}]  37.000 [get_ports {qa_o}]
+set_output_delay -add_delay  -clock [get_clocks {clk_50M}]  37.000 [get_ports {qb_o}]
+set_output_delay -add_delay  -clock [get_clocks {clk_50M}]  37.000 [get_ports {qc_o}]
+set_output_delay -add_delay  -clock [get_clocks {clk_50M}]  37.000 [get_ports {qd_o}]
+set_output_delay -add_delay  -clock [get_clocks {clk_50M}]  37.000 [get_ports {qe_o}]
+set_output_delay -add_delay  -clock [get_clocks {clk_50M}]  37.000 [get_ports {qf_o}]
+set_output_delay -add_delay  -clock [get_clocks {clk_50M}]  37.000 [get_ports {qg_o}]
+set_output_delay -add_delay  -clock [get_clocks {clk_50M}]  37.000 [get_ports {qh1_o}]
+set_output_delay -add_delay  -clock [get_clocks {clk_50M}]  37.000 [get_ports {qh_o}]
 
 
 #**************************************************************

@@ -68,4 +68,19 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Exercise2_tb -section_id 
 set_global_assignment -name EDA_TEST_BENCH_FILE source/Exercise2_tb.vhd -section_id Exercise2_tb
 set_global_assignment -name SDC_FILE source/Exercise2_timing.sdc
 set_global_assignment -name VHDL_FILE source/Exercise2.vhd
+set_location_assignment PIN_Y2 -to clk_50M
+set_location_assignment PIN_Y1 -to srclk
+set_location_assignment PIN_J1 -to rclk
+set_location_assignment PIN_AB28 -to ser
+set_location_assignment PIN_AC28 -to srclr_n_i
+set_location_assignment PIN_AC27 -to oe_n_i
+set_location_assignment PIN_G19 -to qa_o
+set_location_assignment PIN_F19 -to qb_o
+set_location_assignment PIN_E19 -to qc_o
+set_location_assignment PIN_F21 -to qd_o
+set_location_assignment PIN_F18 -to qe_o
+set_location_assignment PIN_E18 -to qf_o
+set_location_assignment PIN_J19 -to qg_o
+set_location_assignment PIN_J17 -to qh1_o
+set_location_assignment PIN_H19 -to qh_o
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
