@@ -69,7 +69,7 @@ NOTE: use Exercise3-section3 files.
 
 Exercise2 - Create VHDL solution proposal for 74595 device - https://www.ti.com/lit/ds/scls041i/scls041i.pdf?ts=1630069816185.
 
-Exercise2-extra - Timing Analyzer according this Quick-Start Tutorial below
+Exercise2-extra - Studing Timing Analyzer tool according Intel Quick-Start Tutorial below
 https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/ug/ug_tq_tutorial.pdf
 
 ## Section 6 
