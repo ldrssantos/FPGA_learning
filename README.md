@@ -37,6 +37,8 @@ end process;
 
 sr_output <= q_a(seletor);
 ```
+Logical diagram result below (considering seletor = 7) :
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section3/Exercise2/source/Schematic_result.jpg?raw=true)
 
 Exercise3 - Create VHDL solution proposal RAM memory with an input and output address, an input port and an output port (all input signals must be STD_LOGIC_VECTOR), Create another RAM memory with only one input and output data port and a third RAM memory with only one input, output and address port.
 
