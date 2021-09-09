@@ -125,7 +125,7 @@ Example1 - Use this EVK to verify Shift register implementations (Exercise1-sect
 Quartus Pin Plnner results according to Design kit documentation presented above
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Example1/source/PinMap-results.jpg?raw=true)
 
-Exercise1 - Use this EVK to verify State machine implementations (Exercise3-section3)
+Exercise1 - Use this EVK to verify State machine implementations (Exercise4-section3)
 
 Quartus Pin Plnner results according to Design kit documentation presented above
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Exercise1/source/PinMap-results.jpg?raw=true)
@@ -140,3 +140,7 @@ Exercise3 - Use this EVK to verify RAM memory implementations (Exercise4-section
 Quartus Pin Plnner results according to Design kit documentation presented above
 ![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Exercise3/source/PinMap-results.jpg?raw=true)
 
+Exercise1-extra - Use this EVK to verify State machine implementations (Exercise3-section3)
+
+Quartus Pin Plnner results according to Design kit documentation presented above
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Exercise1/source/PinMap-results.jpg?raw=true)
