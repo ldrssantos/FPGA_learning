@@ -28,7 +28,7 @@ entity Exercise2 is
 		rst 	 : in std_logic; 
 		
 		mem3_data_inout : inout std_logic_vector(7 downto 0);
-		mem3_addr_inout : in std_logic_vector(7 downto 0);
+		mem3_addr_inout : in std_logic_vector(3 downto 0);
 		mem3_wr_i	 	: in std_logic;
 		mem3_oe_i 		: in std_logic
 	);
@@ -48,14 +48,18 @@ architecture behavioral of Exercise2 is
 		);
 	end component;
 	
+	signal mem3_addr_inout_vec : std_logic_vector(7 downto 0) := (others => '0');
+	
 begin
 
+	mem3_addr_inout_vec(3 downto 0) <= mem3_addr_inout;
+	
 	RAM_MEM3 : RAM_memory_inout_simple_std_logic_vector
 	port map(
 		clk 	 	=> clk,
 		rst 	 	=> rst,
 		data_inout  => mem3_data_inout,
-		addr_inout  => mem3_addr_inout,
+		addr_inout  => mem3_addr_inout_vec,
 		wr_i	 	=> mem3_wr_i,
 		oe_i 	 	=> mem3_oe_i 		 
 	);

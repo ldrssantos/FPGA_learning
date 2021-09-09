@@ -68,10 +68,7 @@ set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_ad
 set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_addr_inout[1]}]
 set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_addr_inout[2]}]
 set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_addr_inout[3]}]
-set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_addr_inout[4]}]
-set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_addr_inout[5]}]
-set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_addr_inout[6]}]
-set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_addr_inout[7]}]
+
 set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_data_inout[0]}]
 set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_data_inout[1]}]
 set_input_delay -add_delay  -clock [get_clocks {clk}]  0.020 [get_ports {mem3_data_inout[2]}]
