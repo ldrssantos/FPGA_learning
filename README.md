@@ -128,7 +128,6 @@ Quartus Pin Plnner results according to Design kit documentation presented above
 Exercise1 - Use this EVK to verify State machine implementations (Exercise4-section3)
 
 Quartus Pin Plnner results according to Design kit documentation presented above
-![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Exercise1/source/PinMap-results.jpg?raw=true)
 
 Exercise2 - Use this EVK to verify RAM memory implementations (Exercise1-section5) 
 
@@ -143,4 +142,4 @@ Quartus Pin Plnner results according to Design kit documentation presented above
 Exercise1-extra - Use this EVK to verify State machine implementations (Exercise3-section3)
 
 Quartus Pin Plnner results according to Design kit documentation presented above
-![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Exercise1/source/PinMap-results.jpg?raw=true)
+![Alt text](https://github.com/ldrssantos/Learning_FPGA/blob/main/Section9/Exercise1-extra/source/PinMap-results.jpg?raw=true)
